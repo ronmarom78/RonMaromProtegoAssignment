@@ -25,3 +25,10 @@ With the thread pull size being an argument, for any chosen *n* sized thread pul
 3. Run:
 
   ```go run ./pkg/main/ -inputFile={path to the urls file} --outputFile {path to the filename the MD5 file should be created under} --threadsNum={number of worker threads}```
+
+## What would I do if I had more time:
+1. Add unit tests for the functionality and perform more rigorous testing.
+
+2. Give more consideration to error handling flows, specifically when to stop and how to report partial failure in certain urls.
+
+3. Consider persisting the state of every URL in order to form a mini-workflow pattern.
